@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [1265_Suite]" parallel="methods">
+  <test thread-count="5" name="956(failed)" parallel="methods">
+    <classes>
+      <class name="com.facebook.tests.FBRegisterTest">
+        <methods>
+          <include name="f6"/>
+          <include name="f4"/>
+          <include name="f1"/>
+          <include name="f5"/>
+          <include name="f2"/>
+          <include name="f3"/>
+        </methods>
+      </class> <!-- com.facebook.tests.FBRegisterTest -->
+    </classes>
+  </test> <!-- 956(failed) -->
+</suite> <!-- Failed suite [1265_Suite] -->

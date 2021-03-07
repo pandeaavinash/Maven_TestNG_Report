@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="com.facebook.listeners.SuiteListener"/>
+    <listener class-name="com.facebook.listeners.ReportListener"/>
+  </listeners>
+  <test thread-count="3" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.facebook.tests.FacebookRegister">
+        <methods>
+          <include name="FacebookRegisterTest2"/>
+        </methods>
+      </class> <!-- com.facebook.tests.FacebookRegister -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

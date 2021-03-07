@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Suite1" verbose="0" parallel="methods"  >
+<listeners>	
+ <listener class-name="com.facebook.listeners.SuiteListener"></listener>
+ <listener class-name="com.facebook.listeners.ReportListener"></listener>
+</listeners> 
+  <test thread-count="3" name="Test" parallel="methods">
+   <method-selectors>
+       <method-selector><script language="beanshell"><![CDATA[
+         groups.containsKey(System.getProperty("groupsToRun")) 
+       ]]></script></method-selector>
+   </method-selectors>
+   <classes>
+      <class name="com.facebook.tests.FacebookRegister"/>
+    </classes>
+  </test>
+  
+</suite>
+
+
+
+
